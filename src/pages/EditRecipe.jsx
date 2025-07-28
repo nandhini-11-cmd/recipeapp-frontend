@@ -109,14 +109,14 @@ const EditRecipe = () => {
                         <button
                           type="button"
                           onClick={() => arrayHelpers.remove(i)}
-                          className="bg-red-500 text-white px-2 rounded"
+                          className="bg-gray-500 text-white px-2 rounded"
                         >
                           -
                         </button>
                         <button
                           type="button"
                           onClick={() => arrayHelpers.insert(i + 1, "")}
-                          className="bg-green-500 text-white px-2 rounded"
+                          className="bg-gray-500 text-white px-2 rounded"
                         >
                           +
                         </button>

@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import foodImg from "../assets/food.jpg";
 
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4 py-8">
       <img
-        src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg"
+        src={foodImg}
         alt="Delicious Food"
         className="w-1/2 max-w-xl object-cover rounded-lg shadow-md mb-6"
       />
@@ -22,7 +23,7 @@ const Home = () => {
         <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
           <strong>User Features:</strong>
           <br />
-          Register, Login, Update Profile, View My Recipes
+          Register, Login, Update Profile, Follow other user, View My Recipes
         </div>
         <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
           <strong>Recipe Sharing:</strong>

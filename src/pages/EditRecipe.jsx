@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate,Link } from "react-router-dom";
 import { Formik, Form, Field, FieldArray } from "formik";
 import API from "../api/axios";
 
@@ -29,6 +29,8 @@ const EditRecipe = () => {
 
   return (
     <div className="max-w-3xl mx-auto p-6 bg-white shadow rounded mt-10">
+      <Link to="/recipes" className="text-green-600 hover:underline inline-block mb-4">
+        ← Back to All recipes</Link>
       <h2 className="text-2xl font-bold mb-4">Edit Recipe</h2>
       <Formik
         initialValues={{

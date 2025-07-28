@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import API from "../api/axios";
+import { Link} from "react-router-dom";
 
 const ShoppingList = () => {
   const [list, setList] = useState([]);
@@ -24,6 +25,8 @@ const ShoppingList = () => {
 
   return (
     <div className="max-w-3xl mx-auto mt-10 p-6 bg-white rounded shadow">
+      <Link to="/recipes" className="text-green-600 hover:underline inline-block mb-4">
+        ← Back to All recipes</Link>
       <h2 className="text-2xl font-bold mb-4">🛒 Shopping List</h2>
 
       {list.length === 0 ? (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import API from "../api/axios";
 
 const CreateRecipe = () => {
@@ -65,7 +65,10 @@ const CreateRecipe = () => {
 
   return (
     <div className="max-w-3xl mx-auto p-6 bg-white rounded shadow mt-10">
+      <Link to="/recipes" className="text-green-600 hover:underline inline-block mb-4">
+        ← Back to All recipes</Link>
       <h2 className="text-2xl font-bold mb-4">Create a New Recipe</h2>
+           
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

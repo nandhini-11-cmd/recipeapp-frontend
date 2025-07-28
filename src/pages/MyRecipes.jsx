@@ -42,6 +42,8 @@ const MyRecipes = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-4 mt-10">
+      <Link to="/recipes" className="text-green-600 hover:underline inline-block mb-4">
+        ← Back to All recipes</Link>
       <h2 className="text-3xl font-bold mb-4">👩‍🍳 My Recipes</h2>
       {recipes.length === 0 ? (
         <p>You haven’t added any recipes yet.</p>

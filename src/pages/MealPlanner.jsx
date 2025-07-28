@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import API from "../api/axios";
 import { Formik, Form, Field } from "formik";
+import {Link} from "react-router-dom";
 
 const MealPlanner = () => {
   const [recipes, setRecipes] = useState([]);
@@ -83,6 +84,8 @@ const MealPlanner = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-4 mt-10">
+      <Link to="/recipes" className="text-green-600 hover:underline inline-block mb-4">
+        ← Back to All recipes</Link>
       <h2 className="text-3xl font-bold mb-4">📅 Weekly Meal Planner</h2>
 
     

@@ -25,6 +25,8 @@ const Favorites = () => {
 
   return (
     <div className="max-w-5xl mx-auto mt-10 p-6 bg-white shadow rounded">
+      <Link to="/recipes" className="text-green-600 hover:underline inline-block mb-4">
+        ← Back to All recipes</Link>
       <h2 className="text-2xl font-bold mb-6">❤️ Favorite Recipes</h2>
       {favorites.length === 0 ? (
         <p>You haven’t added any recipes to favorites yet.</p>

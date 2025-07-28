@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import API from "../api/axios";
+import {Link} from "react-router-dom";
 
 const Following = () => {
   const [following, setFollowing] = useState([]);
@@ -44,6 +45,8 @@ const Following = () => {
 
   return (
     <div className="max-w-4xl mx-auto mt-10 p-4">
+      <Link to="/recipes" className="text-green-600 hover:underline inline-block mb-4">
+        ← Back to All recipes</Link>
       <h2 className="text-3xl font-bold mb-6">Following 👥</h2>
       {following.length === 0 ? (
         <p>You are not following anyone yet.</p>

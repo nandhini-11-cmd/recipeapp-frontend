@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link} from "react-router-dom";
 import ReactPlayer from 'react-player';
 import API from "../api/axios";
 
@@ -127,6 +127,8 @@ const handleAddFavorite = async () => {
 
   return (
     <div className="max-w-3xl mx-auto mt-10 p-6 bg-white rounded shadow">
+      <Link to="/recipes" className="text-green-600 hover:underline inline-block mb-4">
+        ← Back to All recipes</Link>
       <h2 className="text-3xl font-bold mb-2">{recipe.title}</h2>
       <p className="text-gray-500">By {recipe.createdBy?.name}{token && recipe.createdBy && recipe.createdBy._id !== loggedInUserId && (
   <button

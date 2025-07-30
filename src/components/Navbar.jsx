@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="bg-orange-500 text-white p-4 ">
        <div className="flex justify-between items-center">
-      <Link to="/" className="text-2xl font-bold ml-14 md:ml-140">🍽️ YummyHub</Link>
+      <Link to="/" className="text-2xl font-bold ml-18 md:ml-140">🍽️ YummyHub</Link>
      <button onClick={() => setShowMenu(!showMenu)} className="md:hidden text-blue-600 font-bold text-sm  ">
           {showMenu ? '\u2716' : '\u2630'}
         </button>

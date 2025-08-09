@@ -23,7 +23,7 @@ const Navbar = () => {
        className={`mt-4 ${showMenu ? "flex" : "hidden"} flex-col items-start space-y-2 md:space-y-0 md:flex md:flex-row md:items-center md:justify-between md:space-x-4 text-s md:text-m font-bold`}>
         {user ? ( <>
           <span className=" font-bold text-green-800 text-md">Hi, {user.name} Welcome!</span>
-            <Link to="/recipes" className="">All-Recipes</Link>
+            <Link to="/recipes" >All-Recipes</Link>
             <Link to="/create">Add-Recipe</Link>
             <Link to="/my-recipes">My-Recipes</Link>
             <Link to="/favorites">Favorites</Link>

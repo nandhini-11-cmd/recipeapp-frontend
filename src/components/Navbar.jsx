@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="bg-orange-500 text-white p-4 ">
        <div className="flex justify-between items-center">
-      <Link to="/" className="text-2xl font-bold ml-18 md:ml-140">🍽️ YummyHub</Link>
+      <Link to="/" className="text-xl md:text-2xl font-bold ml-2 md:ml-104 ">🍽️ YummyHub</Link>
      <button onClick={() => setShowMenu(!showMenu)} className="md:hidden text-blue-600 font-bold text-sm  ">
           {showMenu ? '\u2716' : '\u2630'}
         </button>
@@ -22,8 +22,8 @@ const Navbar = () => {
      <div
        className={`mt-4 ${showMenu ? "flex" : "hidden"} flex-col items-start space-y-2 md:space-y-0 md:flex md:flex-row md:items-center md:justify-between md:space-x-4 text-s md:text-m font-bold`}>
         {user ? ( <>
-          <span className=" font-bold text-green-800">Hi, {user.name} Welcome!</span>
-            <Link to="/recipes">All-Recipes</Link>
+          <span className=" font-bold text-green-800 text-md">Hi, {user.name} Welcome!</span>
+            <Link to="/recipes" className="">All-Recipes</Link>
             <Link to="/create">Add-Recipe</Link>
             <Link to="/my-recipes">My-Recipes</Link>
             <Link to="/favorites">Favorites</Link>

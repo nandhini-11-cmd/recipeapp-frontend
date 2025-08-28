@@ -16,7 +16,7 @@ const Home = () => {
 
       {/* Right Side - Content */}
       <div className="flex-1 text-center md:text-left">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+        <h1 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
           🍽️ Welcome to the Recipe Sharing App!
         </h1>
 

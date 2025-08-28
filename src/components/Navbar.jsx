@@ -12,17 +12,17 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-orange-500 text-white p-4 ">
+    <nav className="bg-gradient-to-r from-green-300 via-pink-300 to-yellow-300  text-white p-4 ">
        <div className="flex justify-between items-center">
-      <Link to="/" className="text-xl md:text-2xl font-bold ml-2 md:ml-108 animate-bounce">🍽️ YummyHub</Link>
+      <Link to="/" className="text-xl text-black md:text-2xl font-bold ml-2 md:ml-108 animate-bounce">🍽️ YummyHub</Link>
      <button onClick={() => setShowMenu(!showMenu)} className="md:hidden text-blue-600 font-bold text-sm  ">
           {showMenu ? '\u2716' : '\u2630'}
         </button>
       </div>      
      <div
-       className={`mt-4 ${showMenu ? "flex" : "hidden"} flex-col items-start space-y-2 md:space-y-0 md:flex md:flex-row md:items-center md:justify-between md:space-x-4 text-s md:text-m font-bold`}>
+       className={`mt-4 ${showMenu ? "flex" : "hidden"} flex-col items-start space-y-2 md:space-y-0 md:flex md:flex-row md:items-center md:justify-between md:space-x-4 text-s md:text-m font-bold text-black`}>
         {user ? ( <>
-          <span className=" font-bold text-green-800 text-md">Hi, {user.name} Welcome!</span>
+          <span className=" font-bold text-red-600 text-md">Hi, {user.name} Welcome!</span>
             <Link to="/recipes" >All-Recipes</Link>
             <Link to="/create">Add-Recipe</Link>
             <Link to="/my-recipes">My-Recipes</Link>
@@ -31,13 +31,13 @@ const Navbar = () => {
             <Link to="/shopping-list">Shopping-List</Link>
             <Link to="/following">Following</Link>
             <Link to="/profile">Update-Profile</Link>            
-            <button onClick={handleLogout} className="bg-red-600 px-3 py-1 ml-4 rounded hover:bg-red-700">
+            <button onClick={handleLogout} className="bg-red-500 px-3 py-1 ml-4 rounded hover:bg-red-700">
               Logout
             </button>
             </>) : (
               <div className="flex flex-col md:flex-row md:justify-between items-center w-full space-y-2 md:space-y-0">
              <p className="text-xl md:text-2xl  font-bold text-green-700 whitespace-nowrap">
-              Share! Cook! and Enjoy!</p>
+              Cook! Share! and Enjoy!</p>
            <div className="flex flex-row text-xl md:text-xl items-center space-x-2">    
           <Link to="/register" className="text-blue-500  font-bold">SignUp</Link>
           <span className="text-blue-500 font-bold">|</span>  

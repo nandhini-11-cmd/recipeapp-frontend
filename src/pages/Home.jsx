@@ -3,7 +3,7 @@ import foodImg from "../assets/food.jpg";
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-white px-6 py-12 gap-8">
+    <div className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-green-100 via-white to-yellow-100  px-6 py-12 gap-8">
       
       {/* Left Side - Image */}
       <div className="flex-1 flex justify-center">
